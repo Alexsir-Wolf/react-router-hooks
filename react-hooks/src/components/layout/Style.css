@@ -1,0 +1,113 @@
+/*----------------------------------------------------------*/
+/*CONTENT*/
+.Content {
+    display: flex;
+    flex-grow: 1;
+    background-color: #ececec;
+    padding: 30px;
+}
+
+.Content > * {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+.btnOverlay{
+    z-index: 3;
+}
+
+
+/*----------------------------------------------------------*/
+/*MENU*/
+.Menu {
+    display: flex;
+    flex-basis: 250px;
+    background: #056e8b;
+    /* background: linear-gradient(to top, #0d2de4b4, #3d3e3f); */    
+    z-index: 1;
+    -webkit-box-shadow: 4px 0px 17px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 0px 17px -5px rgba(0,0,0,0.75);
+    box-shadow: 4px 0px 17px -5px rgba(0,0,0,0.75);
+}
+
+.Menu nav {
+    flex-grow: 1;
+}
+
+.Menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Menu li {
+    display: flex;
+}
+
+.Menu li a {
+    
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.Menu li a:hover {
+    background: #faf9f9e0;
+    color: #333435;
+}
+
+/*----------------------------------------------------------*/
+/*PAGE TITLE*/
+.PageTitle {
+    border-left: 10px solid #056e8b;
+    padding: 15px;
+    background: #006c9025;
+    margin-bottom: 40px;
+}
+
+.PageTitle h1 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.PageTitle h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.PageTitle.error{
+    border-left: 12px solid#cb2d3e;
+    background:#cb2d3e25;
+}
+
+
+/*----------------------------------------------------------*/
+/*SECTION TITLE*/
+.SectionTitle {
+    border-bottom: 3px solid #006c90;
+}
+
+.SectionTitle h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+}
