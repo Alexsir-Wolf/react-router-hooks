@@ -1,4 +1,7 @@
 .App {
     display: flex;
     height: 100vh;
+    margin: auto;
+    width: 100vh;
 }
+
