@@ -13,6 +13,14 @@
     flex-direction: column;
 }
 
+.center{
+    width: 100%;
+}
+
+.center .input{
+    width: inherit;
+}
+
 /*----------------------------------------------------------*/
 /*MENU*/
 .Menu {
